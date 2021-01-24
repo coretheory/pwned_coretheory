@@ -1,3 +1,12 @@
+![coretheory_logo](https://www.dropbox.com/s/6xw69d7isj5kia2/Logo_Color.png?dl=0)
+
+> This is a fork and modified version of [@thiamsantos] (https://github.com/thiamsantos) [pwned](https://github.com/thiamsantos/pwned) library.
+
+**TODO:** We have added additional functionality to check people's emails against known breaches from [haveibeenpwned](https://haveibeenpwned.com) and to include support for API V3.
+
+_To use the email checking feature, you will need to purchase an API Key from HaveIbeenPwned._
+***
+
 # Pwned
 
 [![Travis](https://img.shields.io/travis/thiamsantos/pwned.svg)](https://travis-ci.org/thiamsantos/pwned)
