@@ -1,4 +1,4 @@
-![coretheory_logo](assets/static/images/CT_Logo_Color.png | width=100)
+<img src="assets/static/images/CT_Logo_Color.png" width="100" height="100">
 
 > This is a fork and modified version of [@thiamsantos] (https://github.com/thiamsantos) [pwned](https://github.com/thiamsantos/pwned) library.
 
