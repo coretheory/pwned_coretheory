@@ -1,6 +1,6 @@
 <img src="assets/static/images/CT_Logo_Color.png" width="100" height="100">
 
-> This is a fork and modified version of [@thiamsantos] (https://github.com/thiamsantos) [pwned](https://github.com/thiamsantos/pwned) library.
+> This is a fork and modified version of [@thiamsantos](https://github.com/thiamsantos) [pwned](https://github.com/thiamsantos/pwned) library.
 
 **TODO:** We have added additional functionality to check people's emails against known breaches from [haveibeenpwned](https://haveibeenpwned.com) and to include support for API V3.
 
