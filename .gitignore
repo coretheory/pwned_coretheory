@@ -1,3 +1,5 @@
+## NOTICE: Updated to ignore environment files.
+
 # The directory Mix will write compiled artifacts to.
 /_build/
 
