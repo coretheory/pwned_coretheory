@@ -2,7 +2,7 @@
 
 > This is a fork and modified version of [@thiamsantos](https://github.com/thiamsantos) [pwned](https://github.com/thiamsantos/pwned) library.
 
-**TODO:** We have added additional functionality to check people's emails against known breaches from [haveibeenpwned](https://haveibeenpwned.com) and to include support for API V3.
+**TODO:** Add functionality to check people's emails against known breaches from [haveibeenpwned](https://haveibeenpwned.com) and to include support for API V3.
 
 _To use the email checking feature, you will need to purchase an API Key from HaveIbeenPwned._
 ***
