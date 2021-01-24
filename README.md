@@ -1,4 +1,4 @@
-![coretheory_logo](https://www.dropbox.com/s/6xw69d7isj5kia2/Logo_Color.png?dl=0)
+![coretheory_logo](assets/static/images/CT_Logo_Color.png)
 
 > This is a fork and modified version of [@thiamsantos] (https://github.com/thiamsantos) [pwned](https://github.com/thiamsantos/pwned) library.
 
