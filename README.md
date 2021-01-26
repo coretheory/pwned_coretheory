@@ -23,12 +23,17 @@ Additionally, we implement padding to further protect the privacy of the passwor
 
 ## Table of Contents
 
+-   [Dependencies](#dependencies)
 -   [Install](#install)
 -   [Usage](#usage)
 -   [Contributing](#contributing)
 -   [License](#license)
 -   [Notice](#notice)
 -   [Special Thanks](#special_thanks)
+
+## Dependencies
+
+This package requires [httpoison v1.8](https://hex.pm/packages/httpoison). If you have v1.7 in your `mix.lock` file, then you will need to update it to `1.8` to successfully run `mix deps.get`.
 
 ## Install
 
@@ -37,7 +42,7 @@ This package can be installed by adding `ct_pwned` to your list of dependencies 
 ```elixir
 def deps do
   [
-    {:pwned_coretheory, "~> 1.0.2"}
+    {:pwned_coretheory, "~> 1.2.0"}
   ]
 end
 ```
