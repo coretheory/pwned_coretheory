@@ -42,6 +42,7 @@ defmodule CTPwned.MixProject do
 
   defp package() do
     [
+      files: ~w(assets/static/images/CT_Logo_Color.png),
       maintainers: ["Core Theory"],
       licenses: ["Apache 2.0"],
       links: %{"GitHub" => "https://github.com/coretheory/ct_pwned"},
