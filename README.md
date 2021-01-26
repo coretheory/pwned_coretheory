@@ -19,12 +19,14 @@ A simple application to check if an email or password has been pwned
     using the HaveIBeenPwned? API. It requires a purchased hibp-api-key
     in order to use the email checking functions.
 
-**Emails**
+### Emails
+
 This library currently implements simple email checking against data breaches with the HaveIBeenPwned? API v3. It requires a [purchased api-key](https://haveibeenpwned.com/API/Key) in order to work.
 
 The `Pwned.check_email/1` function returns the total number of times an email address has appeared in known data breaches, or a ```elixir"email not pwned"``` message.
 
-**Passwords**
+### Passwords
+
 This library uses [have i been pwned?](https://haveibeenpwned.com) to verify if a password has appeared in a data breach. 
 
 In order to protect the value of the source password being searched, the value is not sent through the network. Instead it uses a [k-Anonymity](https://en.wikipedia.org/wiki/K-anonymity) model that allows a [password to be searched for by partial hash](https://haveibeenpwned.com/API/v2#SearchingPwnedPasswordsByRange). This allows the first 5 characters of a SHA-1 password hash to be passed to the API. Then, it searches the results of the response for the presence of the source hash. If the source hash is not found, then the password does not exist in the data set.
@@ -40,7 +42,7 @@ Additionally, we implement padding to further protect the privacy of the passwor
 
 ## Install
 
-The package can be installed by adding `ct_pwned` to your list of dependencies in `mix.exs`:
+This package can be installed by adding `ct_pwned` to your list of dependencies in `mix.exs`:
 
 ```elixir
 def deps do
