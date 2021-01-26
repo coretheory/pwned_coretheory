@@ -2,6 +2,7 @@
 
 # Pwned by Core Theory
 
+![Elixir CI](https://github.com/coretheory/ct_pwned/workflows/Elixir%20CI/badge.svg)
 [![Hex.pm](https://img.shields.io/hexpm/v/pwned_coretheory.svg)](https://hex.pm/packages/pwned_coretheory)
 [![Docs](https://img.shields.io/badge/hex-docs-green.svg)](https://hexdocs.pm/pwned_coretheory/readme.html)
 
