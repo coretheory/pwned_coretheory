@@ -2,6 +2,8 @@ defmodule Pwned do
   @moduledoc """
   Check if your password has been pwned.
   """
+  alias Pwned.Utils.EmailFlattener
+  alias Pwned.Utils.EmailReducer
 
   @doc """
   It uses [have i been pwned?](https://haveibeenpwned.com) to verify if a password has appeared in a data breach. In order to protect the value of the source password being searched the value is not sended through the network.
@@ -21,23 +23,42 @@ defmodule Pwned do
          {:ok, response} <- range_client().get(head),
          {:ok, range} <- parse_password_response(response),
          {:ok, answer} <- do_check(range, rest) do
+
       {:ok, answer}
     else
       :error -> :error
     end
   end
 
+  @doc """
+  This uses API v3 of the [have i been pwned?](https://haveibeenpwned.com) to check
+  if an email has appeared in a data breach. It returns the total count of appearances.
+
+  It also requires a purchased hibp-api-key, and implements a 12-factor methodology by
+  accessing the hibp-api-key from the system's environment variables.
+
+  ## Examples
+
+    iex> Pwned.check_email("test123@example.com")
+    {:pwned_email, 4893554722}
+
+    iex Pwned.check_email("Z76okiy2X1m5PFud8iPUQGqusShCJhg@example.com")
+    {:safe_email, "email not pwned"}
+  """
   def check_email(email) do
     with head <- email,
-         {:ok, response} <- api_client().get(head),
-         {:ok, response} <- parse_email_response(response) do
-         #{:ok, email_pwn_list} <- get_email_pwn_list(parsed_response) do
-         #{:ok, filter} <- filter_parsed_email_response(parsed_email_response) do
-         #{:ok, parsed_email_response} <- parse_email_response(response),
-         #{:ok, answer} <- do_check_email(parsed_email_response, rest) do
-      {:ok, response}
+         {:pwned_email, response} <- api_client().get(head),
+         {:ok, response} <- parse_email_response(response),
+         email_list <- EmailFlattener.flatten(response),
+         pwned_count <- EmailReducer.reduce_email_list(email_list) do
+
+      {:pwned_email, pwned_count}
     else
-      :error -> :error
+      {:safe_email, message} -> {:safe_email, message}
+
+      {:error, message} -> {:error, message}
+
+      {:error, reason} -> {:error, reason}
     end
   end
 
