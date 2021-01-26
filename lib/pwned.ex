@@ -44,6 +44,7 @@ defmodule Pwned do
 
     iex Pwned.check_email("Z76okiy2X1m5PFud8iPUQGqusShCJhg@example.com")
     {:safe_email, "email not pwned"}
+
   """
   def check_email(email) do
     with head <- email,
