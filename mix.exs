@@ -42,7 +42,6 @@ defmodule CTPwned.MixProject do
 
   defp package() do
     [
-      files: ~w(assets/static/images/CT_Logo_Color.png),
       maintainers: ["Core Theory"],
       licenses: ["Apache 2.0"],
       links: %{"GitHub" => "https://github.com/coretheory/ct_pwned"},
@@ -54,7 +53,9 @@ defmodule CTPwned.MixProject do
       main: "readme",
       name: "Pwned by Core Theory",
       source_ref: "v#{@version}",
+      canonical: "https://hexdocs.pm/pwned_coretheory/",
       source_url: "https://github.com/coretheory/ct_pwned",
+      logo: "assets/static/images/CT_Logo_Color.png",
       extras: [
         "README.md",
         "CONTRIBUTING.md"
