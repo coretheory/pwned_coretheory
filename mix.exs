@@ -13,7 +13,6 @@ defmodule CTPwned.MixProject do
       description: description(),
       package: package(),
       docs: docs(),
-      organization: "Core Theory",
       source_url: "https://github.com/coretheory/ct_pwned"
     ]
   end
@@ -45,7 +44,8 @@ defmodule CTPwned.MixProject do
     [
       maintainers: ["Core Theory"],
       licenses: ["Apache 2.0"],
-      links: %{"GitHub" => "https://github.com/coretheory/ct_pwned"}
+      links: %{"GitHub" => "https://github.com/coretheory/ct_pwned"},
+      organization: "Core Theory"
     ]
   end
 
