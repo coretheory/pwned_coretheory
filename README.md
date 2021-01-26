@@ -23,7 +23,7 @@ A simple application to check if an email or password has been pwned
 
 This library currently implements simple email checking against data breaches with the HaveIBeenPwned? API v3. It requires a [purchased api-key](https://haveibeenpwned.com/API/Key) in order to work.
 
-The `Pwned.check_email/1` function returns the total number of times an email address has appeared in known data breaches, or a ```elixir"email not pwned"``` message.
+The `Pwned.check_email/1` function returns the total number of times an email address has appeared in known data breaches, or an `"email not pwned"` message.
 
 ### Passwords
 
