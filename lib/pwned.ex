@@ -58,7 +58,7 @@ defmodule Pwned do
 
       {:error, message} -> {:error, message}
 
-      {:error, reason} -> {:error, reason}
+      _ -> :error
     end
   end
 
@@ -106,6 +106,6 @@ defmodule Pwned do
   defp handle_count(:error), do: :error
   defp handle_count({count, _rest}), do: {:ok, count}
 
-  defp range_client, do: Application.get_env(:pwned, :range_client, Pwned.Range.HTTPClient)
-  defp api_client, do: Application.get_env(:pwned, :api_client, Pwned.Utils.APIClient)
+  defp range_client, do: Application.get_env(:ct_pwned, :range_client, Pwned.Range.HTTPClient)
+  defp api_client, do: Application.get_env(:ct_pwned, :api_client, Pwned.Utils.APIClient)
 end

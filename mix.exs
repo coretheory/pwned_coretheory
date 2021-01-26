@@ -1,11 +1,11 @@
-defmodule Pwned.MixProject do
+defmodule CTPwned.MixProject do
   use Mix.Project
 
-  @version "1.2.0"
+  @version "0.0.7"
 
   def project do
     [
-      app: :pwned,
+      app: :pwned_coretheory,
       version: @version,
       elixir: "~> 1.11",
       start_permanent: Mix.env() == :prod,
@@ -13,8 +13,7 @@ defmodule Pwned.MixProject do
       description: description(),
       package: package(),
       docs: docs(),
-      test_coverage: [tool: ExCoveralls],
-      name: "CT Pwned",
+      organization: "Core Theory",
       source_url: "https://github.com/coretheory/ct_pwned"
     ]
   end
@@ -36,7 +35,9 @@ defmodule Pwned.MixProject do
 
   defp description() do
     """
-    Check if your password and email have been pwned.
+    A simple application to check if an email or password has been pwned
+    using the HaveIBeenPwned? API. It requires a purchased hibp-api-key
+    in order to use the email checking functions.
     """
   end
 
@@ -51,9 +52,8 @@ defmodule Pwned.MixProject do
   defp docs() do
     [
       main: "readme",
-      name: "Pwned",
+      name: "Pwned by Core Theory",
       source_ref: "v#{@version}",
-      canonical: "http://hexdocs.pm/pwned",
       source_url: "https://github.com/coretheory/ct_pwned",
       extras: [
         "README.md",

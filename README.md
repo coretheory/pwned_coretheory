@@ -2,7 +2,8 @@
 
 > This is a fork and modified version of [@thiamsantos](https://github.com/thiamsantos) [pwned](https://github.com/thiamsantos/pwned) library.
 
-**TODO:** Add functionality to check people's emails against known breaches from [haveibeenpwned](https://haveibeenpwned.com) and to include support for API V3.
+## Update for email checking
+Added functionality to check people's emails against known breaches from [haveibeenpwned](https://haveibeenpwned.com) and to include support for API V3.
 
 _To use the email checking feature, you will need to purchase an API Key from HaveIbeenPwned._
 ***
@@ -31,7 +32,7 @@ The package can be installed by adding `pwned` to your list of dependencies in `
 ```elixir
 def deps do
   [
-    {:pwned, "~> 1.1"}
+    {:ct_pwned, github: "coretheory/ct_pwned"}
   ]
 end
 ```
@@ -51,10 +52,30 @@ case Pwned.check_password("somepassword") do
 end
 ```
 
+```elixir
+case Pwned.check_email("test123@exmaple.com") do
+  {:safe_email, message} ->
+    IO.puts(message)
+
+  {:pwned_email, pwned_count} ->
+    IO.puts("Ohh, sorry! This email has appeared #{pwned_count} times in data breaches.")
+
+  {:error, message} ->
+    IO.puts("An error occurred: " <> message)
+  
+  :error ->
+    IO.puts("Something went wrong.")
+end
+```
+
 ## Contributing
 
 See the [contributing file](CONTRIBUTING.md).
 
 ## License
 
-[Apache License, Version 2.0](LICENSE.md) © [Thiago Santos](https://github.com/thiamsantos)
+[Apache License, Version 2.0](LICENSE.md) © [Core Theory](https://github.com/coretheory)
+
+## Special thanks
+
+This extension was built from the simple and wonderful library, [pwned](https://github.com/thiamsantos/pwned), by [Thiago Santos](https://github.com/thiamsantos).
