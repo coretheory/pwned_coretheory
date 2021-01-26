@@ -27,6 +27,20 @@ defmodule Pwned do
     end
   end
 
+  def check_email(email) do
+    with head <- email,
+         {:ok, response} <- api_client().get(head),
+         {:ok, response} <- parse_email_response(response) do
+         #{:ok, email_pwn_list} <- get_email_pwn_list(parsed_response) do
+         #{:ok, filter} <- filter_parsed_email_response(parsed_email_response) do
+         #{:ok, parsed_email_response} <- parse_email_response(response),
+         #{:ok, answer} <- do_check_email(parsed_email_response, rest) do
+      {:ok, response}
+    else
+      :error -> :error
+    end
+  end
+
   defp hash(password) do
     :crypto.hash(:sha, password)
     |> Base.encode16()
@@ -39,6 +53,11 @@ defmodule Pwned do
       |> String.split("\r\n")
       |> Enum.map(fn line -> String.split(line, ":") end)
 
+    {:ok, parsed_response}
+  end
+
+  defp parse_email_response(response) do
+    parsed_response = Regex.scan(~r/"PwnCount":\d+/, response)
     {:ok, parsed_response}
   end
 
@@ -67,4 +86,5 @@ defmodule Pwned do
   defp handle_count({count, _rest}), do: {:ok, count}
 
   defp range_client, do: Application.get_env(:pwned, :range_client, Pwned.Range.HTTPClient)
+  defp api_client, do: Application.get_env(:pwned, :api_client, Pwned.Utils.APIClient)
 end
