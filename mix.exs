@@ -45,7 +45,6 @@ defmodule CTPwned.MixProject do
       maintainers: ["Core Theory"],
       licenses: ["Apache 2.0"],
       links: %{"GitHub" => "https://github.com/coretheory/ct_pwned"},
-      organization: "core_theory"
     ]
   end
 
