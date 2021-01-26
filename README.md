@@ -2,8 +2,8 @@
 
 # Pwned by Core Theory
 
-[![Hex.pm](https://img.shields.io/hexpm/v/pwned.svg)](https://hex.pm/packages/pwned)
-[![Docs](https://img.shields.io/badge/hex-docs-green.svg)](https://hexdocs.pm/pwned)
+[![Hex.pm](https://img.shields.io/hexpm/v/pwned.svg)](https://hex.pm/packages/pwned_coretheory)
+[![Docs](https://img.shields.io/badge/hex-docs-green.svg)](https://hexdocs.pm/pwned_coretheory/)
 
 A simple application to check if an email or password has been pwned using the HaveIbeenPwned? API v3.
 
