@@ -27,7 +27,7 @@ The `Pwned.check_email/1` function returns the total number of times an email ad
 
 ### Passwords
 
-This library uses [have i been pwned?](https://haveibeenpwned.com) to verify if a password has appeared in a data breach. 
+This library uses [HaveIBeenPwned?](https://haveibeenpwned.com) to verify if a password has appeared in a data breach. 
 
 In order to protect the value of the source password being searched, the value is not sent through the network. Instead it uses a [k-Anonymity](https://en.wikipedia.org/wiki/K-anonymity) model that allows a [password to be searched for by partial hash](https://haveibeenpwned.com/API/v2#SearchingPwnedPasswordsByRange). This allows the first 5 characters of a SHA-1 password hash to be passed to the API. Then, it searches the results of the response for the presence of the source hash. If the source hash is not found, then the password does not exist in the data set.
 
