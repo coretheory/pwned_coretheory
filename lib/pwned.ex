@@ -19,7 +19,7 @@ defmodule Pwned do
   def check_password(password) do
     with {head, rest} <- hash(password),
          {:ok, response} <- range_client().get(head),
-         {:ok, range} <- parse_response(response),
+         {:ok, range} <- parse_password_response(response),
          {:ok, answer} <- do_check(range, rest) do
       {:ok, answer}
     else
@@ -47,7 +47,7 @@ defmodule Pwned do
     |> String.split_at(5)
   end
 
-  defp parse_response(response) do
+  defp parse_password_response(response) do
     parsed_response =
       response
       |> String.split("\r\n")
