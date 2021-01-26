@@ -42,7 +42,7 @@ This package can be installed by adding `ct_pwned` to your list of dependencies 
 ```elixir
 def deps do
   [
-    {:pwned_coretheory, "~> 1.2.0"}
+    {:pwned_coretheory, "~> 1.2"}
   ]
 end
 ```
