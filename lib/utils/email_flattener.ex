@@ -4,7 +4,6 @@ defmodule Pwned.Utils.EmailFlattener do
   [breachedaccount](https://haveibeenpwned.com/API/v3#BreachesForAccount) API v3 response.
   """
 
-  @spec flatten(List.t) :: List.t
   def flatten(list) do
     list
     |> Enum.reduce([], &do_flatten/2)
