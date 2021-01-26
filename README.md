@@ -1,13 +1,5 @@
 <img src="assets/static/images/CT_Logo_Color.png" width="100" height="100">
 
-> This is a fork and modified version of [@thiamsantos](https://github.com/thiamsantos) [pwned](https://github.com/thiamsantos/pwned) library.
-
-## Update for email checking
-Added functionality to check people's emails against known breaches from [haveibeenpwned](https://haveibeenpwned.com) and to include support for API V3.
-
-_To use the email checking feature, you will need to purchase an API Key from HaveIbeenPwned._
-***
-
 # Pwned by Core Theory
 
 [![Hex.pm](https://img.shields.io/hexpm/v/pwned.svg)](https://hex.pm/packages/pwned)
@@ -39,6 +31,8 @@ Additionally, we implement padding to further protect the privacy of the passwor
 -   [Usage](#usage)
 -   [Contributing](#contributing)
 -   [License](#license)
+-   [Notice](#notice)
+-   [Special Thanks](#special_thanks)
 
 ## Install
 
@@ -132,6 +126,10 @@ See the [contributing file](CONTRIBUTING.md).
 
 [Apache License, Version 2.0](LICENSE.md) © [Core Theory](https://github.com/coretheory)
 
+## Notice
+
+> This is a fork and modified version of the [pwned](https://github.com/thiamsantos/pwned) package © [@thiamsantos](https://github.com/thiamsantos).
+
 ## Special thanks
 
-This extension was built from the simple and wonderful library, [pwned](https://github.com/thiamsantos/pwned), by [Thiago Santos](https://github.com/thiamsantos).
+This extension was built from the simple and wonderful package, [pwned](https://github.com/thiamsantos/pwned), by [Thiago Santos](https://github.com/thiamsantos). ♥
