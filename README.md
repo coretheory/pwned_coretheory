@@ -5,11 +5,7 @@
 [![Hex.pm](https://img.shields.io/hexpm/v/pwned.svg)](https://hex.pm/packages/pwned)
 [![Docs](https://img.shields.io/badge/hex-docs-green.svg)](https://hexdocs.pm/pwned)
 
-> Checks if an email or password has been pwned using the HaveIbeenPwned? API v3.
-
-A simple application to check if an email or password has been pwned
-    using the HaveIBeenPwned? API. It requires a purchased hibp-api-key
-    in order to use the email checking functions.
+A simple application to check if an email or password has been pwned using the HaveIbeenPwned? API v3.
 
 ### Emails
 
