@@ -37,7 +37,7 @@ This package can be installed by adding `ct_pwned` to your list of dependencies 
 ```elixir
 def deps do
   [
-    {:ct_pwned, github: "coretheory/ct_pwned"}
+    {:pwned_coretheory, "~> 1.0.0"}
   ]
 end
 ```

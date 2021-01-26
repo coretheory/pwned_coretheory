@@ -1,7 +1,7 @@
 defmodule CTPwned.MixProject do
   use Mix.Project
 
-  @version "0.0.7"
+  @version "1.0.0"
 
   def project do
     [
