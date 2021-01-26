@@ -128,7 +128,7 @@ See the [contributing file](CONTRIBUTING.md).
 
 ## Notice
 
-> This is a fork and modified version of the [pwned](https://github.com/thiamsantos/pwned) package © [@thiamsantos](https://github.com/thiamsantos).
+This is a modified version of the [pwned](https://github.com/thiamsantos/pwned) package © [@thiamsantos](https://github.com/thiamsantos).
 
 ## Special thanks
 
