@@ -1,4 +1,4 @@
-![Core Theory logo](assets/static/images/CT_Logo_Text.png | width="100" height="100")
+![Core Theory logo](assets/static/images/CT_Logo_Text.png)
 
 # Pwned by Core Theory
 
