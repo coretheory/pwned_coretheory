@@ -14,9 +14,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Set up Elixir
-      env: # Set the secret as an environment variable
-        HIBP_API_KEY: ${{ secrets.HIBP_API_KEY }} 
+    - name: Set up Elixir 
       uses: actions/setup-elixir@v1
       with:
         elixir-version: '1.11.3' # Define the elixir version [required]
@@ -31,5 +29,7 @@ jobs:
       run: mix deps.get
     - name: Run password tests
       run: mix test test/pwned/password_test.exs
-    - name: Run email tests  
-      run: mix test test/pwned/email_test.exs
+    - name: Run email tests
+      env: # Set the secret as an environment variable
+        HIBP_API_KEY: ${{ secrets.HIBP_API_KEY }}
+      run: mix test test/pwned/email_test.exs "$env:HIBP_API_KEY"
