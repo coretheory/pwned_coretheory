@@ -138,6 +138,10 @@ case Pwned.check_email("test123@exmaple.com") do
 end
 ```
 
+## Changelog
+
+See the [changelog file](CHANGELOG.md).
+
 ## Contributing
 
 See the [contributing file](CONTRIBUTING.md).
