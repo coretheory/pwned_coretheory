@@ -14,11 +14,12 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Set up Elixir
+    - name: Set up Elixir 
       uses: actions/setup-elixir@v1
       with:
         elixir-version: '1.11.3' # Define the elixir version [required]
         otp-version: '23.2.2' # Define the OTP version [required]
+        HIBP_API_KEY: ${{ secrets.HIBP_API_KEY }}
     - name: Restore dependencies cache
       uses: actions/cache@v2
       with:
@@ -30,6 +31,7 @@ jobs:
     - name: Run password tests
       run: mix test test/pwned/password_test.exs
     - name: Run email tests
-      env:
+      env: # Set the secret as an environment variable
         HIBP_API_KEY: ${{ secrets.HIBP_API_KEY }}
       run: mix test test/pwned/email_test.exs
+        
