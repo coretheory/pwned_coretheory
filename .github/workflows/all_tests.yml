@@ -13,6 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     env: # Set the secret as an environment variable
         HIBP_API_KEY: ${{ secrets.HIBP_API_KEY }}
+    environment: Production
      
     steps:
     - uses: actions/checkout@v2
