@@ -28,4 +28,8 @@ jobs:
     - name: Install dependencies
       run: mix deps.get
     - name: Run password tests
-      run: mix test test/pwned/password_test.exs # Password tests will work for everyone
+      run: mix test test/pwned/password_test.exs
+    - name: Run email tests
+      env:
+        HIBP_API_KEY: ${{ secrets.HIBP_API_KEY }}
+      run: mix test test/pwned/email_test.exs
