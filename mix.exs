@@ -1,4 +1,4 @@
-defmodule CTPwned.MixProject do
+defmodule Pwned.MixProject do
   use Mix.Project
 
   @version "1.2.2"
@@ -20,7 +20,8 @@ defmodule CTPwned.MixProject do
   def application do
     [
       applications: [:httpoison],
-      extra_applications: [:logger]
+      extra_applications: [:logger],
+      env: [user_agent: "Pwned Core Theory Elixir Client"]
     ]
   end
 

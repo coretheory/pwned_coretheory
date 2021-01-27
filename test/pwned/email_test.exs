@@ -1,17 +1,17 @@
 defmodule Pwned.EmailTest do
-  use ExUnit.Case, async: true
-  alias Pwned
-
-  @test_pwned_email "test123@example.com"
-  @test_safe_email "Z76okiy2X1m5PFud8iPUQGqusShCJhg@example.com"
-
-  @doc """
+  @moduledoc """
   Tests that the check_email/1 function returns the correct
   tuple using the HaveIBeenPwned? API v3.
 
   This requires a purchased hibp-api-key. You can purchase one
   here: https://haveibeenpwned.com/API/Key.
   """
+  use ExUnit.Case, async: true
+  alias Pwned
+
+  @test_pwned_email "test123@example.com"
+  @test_safe_email "Z76okiy2X1m5PFud8iPUQGqusShCJhg@example.com"
+
   describe "verify check_email/1" do
     test "check_email returns the email pwned count when email is pwned" do
       assert {:pwned_email, pwned_count} = Pwned.check_email(@test_pwned_email)
