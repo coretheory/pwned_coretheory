@@ -19,6 +19,6 @@ defmodule Pwned.Utils.EmailFlattener do
   end
 
   defp do_flatten(item, acc) do
-    [ item | acc ]
+    [item | acc]
   end
 end

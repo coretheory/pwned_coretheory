@@ -21,7 +21,6 @@ defmodule Pwned.MixProject do
     [
       applications: [:httpoison],
       extra_applications: [:logger],
-      env: [user_agent: "Pwned Core Theory Elixir Client"]
     ]
   end
 
@@ -29,7 +28,8 @@ defmodule Pwned.MixProject do
     [
       {:httpoison, "~> 1.8"},
       {:ex_doc, "~> 0.23.0", only: :dev, runtime: false},
-      {:dialyxir, "~> 1.0", only: [:dev, :test], runtime: false}
+      {:dialyxir, "~> 1.0", only: [:dev, :test], runtime: false},
+      {:credo, "~> 1.5", only: [:dev, :test], runtime: false}
     ]
   end
 

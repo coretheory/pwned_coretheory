@@ -7,7 +7,7 @@ defmodule Pwned.Utils.APIClient do
   """
 
   @hibp_api_key System.get_env("HIBP_API_KEY")
-  @user_agent Application.get_env(:pwned_coretheory, :user_agent)
+  @user_agent Application.compile_env(:pwned_coretheory, :user_agent, "Pwned by Core Theory Elixir Client")
 
   def get(head) do
     case HTTPoison.get("https://haveibeenpwned.com/api/v3/breachedaccount/#{head}?truncateResponse=false", [{"hibp-api-key", @hibp_api_key}, {"user-agent", @user_agent}]) do
