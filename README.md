@@ -30,7 +30,7 @@ Additionally, we implement padding to further protect the privacy of the passwor
 -   [Contributing](#contributing)
 -   [License](#license)
 -   [Notice](#notice)
--   [Special Thanks](#special_thanks)
+-   [Special Thanks](#special-thanks)
 
 ## Dependencies
 
