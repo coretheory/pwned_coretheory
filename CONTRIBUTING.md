@@ -1,4 +1,4 @@
-# Contributing to ct_pwned
+# Contributing to pwned_coretheory
 _This is an extension of the original [pwned](https://github.com/thiamsantos/pwned) package by [Thiago Santos](https://github.com/thiamsantos)._
 
 Thank you for taking the time and effort to contribute! 
@@ -8,16 +8,16 @@ These are just guidelines, not rules.
 Use your best judgment, and feel free to propose changes to this document in a pull request.
 
 ## Reporting Issues
-Found a problem? Want a new feature? First of all see if your issue or idea has [already been reported](https://github.com/coretheory/ct_pwned/issues).
-If don't, just open a [new clear and descriptive issue](https://github.com/coretheory/ct_pwned/issues/new).
+Found a problem? Want a new feature? First of all see if your issue or idea has [already been reported](https://github.com/coretheory/pwned_coretheory/issues).
+If don't, just open a [new clear and descriptive issue](https://github.com/coretheory/pwned_coretheory/issues/new).
 
 ## Submitting pull requests
 Pull requests are the greatest contributions, so be sure they are focused in scope, and do avoid unrelated commits.
 And submit your pull request after making sure that all tests pass and they are covering 100% of the code.
 
 - Fork it!
-- Clone your fork: `git clone https://github.com/<your-username>/ct_pwned`
-- Navigate to the newly cloned directory: `cd ct_pwned`
+- Clone your fork: `git clone https://github.com/<your-username>/pwned_coretheory`
+- Navigate to the newly cloned directory: `cd pwned_coretheory`
 - Create a new branch for the new feature: `git checkout -b my-new-feature`
 - Install the tools necessary for development: `npm install`
 - Make your changes.
