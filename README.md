@@ -50,7 +50,7 @@ end
 
 ## Usage
 
-Usage is incredible simple and straightforward. You can check if an
+Usage is incredibly simple and straightforward. You can check if an
 email or password has been pwned with calls to their respective
 functions.
 
@@ -91,6 +91,23 @@ end
 ```
 
 ### Check for pwned emails
+
+First, let's make sure our `hibp-api-key` is ready to go.
+
+** Purchase your hibp-api-key and add it to an environment file **
+You will first need to purchase a `hibp-api-key` from [haveibeenpwned?](https://haveibeenpwned.com/API/Key).
+
+Then, create a `.env` file at the root of your project (e.g. beside your `.gitignore`. Be sure to update
+your `.gitignore` file to ignore environment files: `*.env`. 
+
+Once you are certain that you will not be pushing your environment files up to a source control repository,
+add your purchased `hibp-api-key` to your `.env` file: `export HIBP_API_KEY=your_hibp_api_key`. Next, you'll
+want to run `source .env` from your terminal.
+
+For production, you'll want to have your `hibp-api-key` safely stored in your production host's environment
+variables configuarion.
+
+** Checking emails **
 
 To check whether an email has been pwned you can make a simple call to the `Pwned.check_email/1` function:
 
