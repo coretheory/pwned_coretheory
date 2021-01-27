@@ -1,5 +1,5 @@
 # Contributing to ct_pwned
-_This is an extension of the original [pwned](https://github.com/thiamsantos/pwned) library by [Thiago Santos](https://github.com/thiamsantos)._
+_This is an extension of the original [pwned](https://github.com/thiamsantos/pwned) package by [Thiago Santos](https://github.com/thiamsantos)._
 
 Thank you for taking the time and effort to contribute! 
 
