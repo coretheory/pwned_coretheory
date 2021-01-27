@@ -109,6 +109,17 @@ want to run `source .env` from your terminal.
 For production, you'll want to have your `hibp-api-key` safely stored in your production host's environment
 variables configuration with the key: `HIBP_API_KEY`.
 
+Lastly, you can easily configure the `:user_agent` for the HIBP API, like so:
+
+```elixir
+# In your config.exs.
+config :pwned_coretheory,
+  user_agent: "YourApp Pwned Client"
+```
+
+_We highly recommend you set the configuration as it is good practice and informs the HaveIBeenPwned? service
+that it is your application accessing the data and not a spammer or malicious account._
+
 **Checking emails**
 
 To check whether an email has been pwned you can make a simple call to the `Pwned.check_email/1` function:
