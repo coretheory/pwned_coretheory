@@ -1,5 +1,10 @@
 defmodule Pwned.Utils.APIClient do
-  @moduledoc false
+  @moduledoc """
+  Checks if a given email has been pwned using
+  the HaveIBeenPwned? API v3 [breachedaccounts service](https://haveibeenpwned.com/API/v3#BreachesForAccount).
+
+  Requires a purchased [hibp-api_key](https://haveibeenpwned.com/API/Key).
+  """
 
   @hibp_api_key System.get_env("HIBP_API_KEY")
   @user_agent Application.get_env(:pwned_coretheory, :user_agent)

@@ -8,6 +8,7 @@ This is the changelog for Pwned by Core Theory.
 
 - Add default for application environment `:user_agent` and ability to override in 3rd party application config files.
 - Add usage explanation for setting the `:user_agent` in 3rd party applications.
+- Add `@moduledoc` to `Pwned.APIClient`.
 
 ## 1.2.2 (2021-01-26)
 
