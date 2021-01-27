@@ -58,7 +58,8 @@ defmodule CTPwned.MixProject do
       logo: "assets/static/images/CT_Logo_Color.png",
       extras: [
         "README.md",
-        "CONTRIBUTING.md"
+        "CONTRIBUTING.md",
+        "LICENSE.md"
       ]
     ]
   end
