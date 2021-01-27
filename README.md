@@ -106,7 +106,7 @@ add your purchased `hibp-api-key` to your `.env` file: `export HIBP_API_KEY=your
 want to run `source .env` from your terminal.
 
 For production, you'll want to have your `hibp-api-key` safely stored in your production host's environment
-variables configuarion.
+variables configuration with the key: `HIBP_API_KEY`.
 
 **Checking emails**
 
