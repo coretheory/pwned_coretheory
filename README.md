@@ -27,6 +27,7 @@ Additionally, we implement padding to further protect the privacy of the passwor
 -   [Dependencies](#dependencies)
 -   [Install](#install)
 -   [Usage](#usage)
+-   [Changelog](#changelog)
 -   [Contributing](#contributing)
 -   [License](#license)
 -   [Notice](#notice)
