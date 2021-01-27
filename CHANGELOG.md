@@ -2,6 +2,12 @@
 
 This is the changelog for Pwned by Core Theory.
 
+## 1.2.4 (2021-01-26)
+
+### Enhancements
+
+- Add `hibp-api-key` to CI to enable checking email and password tests.
+
 ## 1.2.3 (2021-01-26)
 
 ### Enhancements
