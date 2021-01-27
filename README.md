@@ -126,7 +126,7 @@ See the [contributing file](CONTRIBUTING.md).
 
 ## License
 
-[Apache License, Version 2.0](LICENSE.md) © [Core Theory](https://github.com/coretheory)
+[Apache License, Version 2.0](LICENSE.md) © 2021 [Core Theory, Inc.](https://github.com/coretheory)
 
 ## Notice
 
