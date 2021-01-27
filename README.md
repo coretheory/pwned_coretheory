@@ -39,12 +39,30 @@ This package requires [httpoison v1.8](https://hex.pm/packages/httpoison). If yo
 
 ## Install
 
+**Recommended**
+
 This package can be installed by adding `ct_pwned` to your list of dependencies in `mix.exs`:
 
 ```elixir
 def deps do
   [
-    {:pwned_coretheory, "~> 1.2"}
+    ...
+    {:pwned_coretheory, "~> 1.2"},
+  ]
+end
+```
+
+Then, run `mix deps.get`. Additionally, run `mix deps.update pwned_coretheory` occasionally to ensure you have the latest release.
+
+**Running on master**
+
+If you would like to run on the master branch, then update your dependencies as such:
+
+```elixir
+def deps do
+  [
+    ...
+    {:pwned_coretheory, github: "coretheory/pwned_coretheory"},
   ]
 end
 ```
