@@ -94,7 +94,8 @@ end
 
 First, let's make sure our `hibp-api-key` is ready to go.
 
-** Purchase your hibp-api-key and add it to an environment file **
+**Purchase your hibp-api-key and add it to an environment file**
+
 You will first need to purchase a `hibp-api-key` from [haveibeenpwned?](https://haveibeenpwned.com/API/Key).
 
 Then, create a `.env` file at the root of your project (e.g. beside your `.gitignore`. Be sure to update
@@ -107,7 +108,7 @@ want to run `source .env` from your terminal.
 For production, you'll want to have your `hibp-api-key` safely stored in your production host's environment
 variables configuarion.
 
-** Checking emails **
+**Checking emails**
 
 To check whether an email has been pwned you can make a simple call to the `Pwned.check_email/1` function:
 
