@@ -31,5 +31,5 @@ jobs:
       run: mix test test/pwned/password_test.exs
     - name: Run email tests
       env:
-        HIBP_API_KEY: ${{ secrets.HIBP_API_KEY }}
+        Test: ${{ secrets.HIBP_API_KEY }}
       run: mix test test/pwned/email_test.exs
