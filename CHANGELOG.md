@@ -2,6 +2,13 @@
 
 This is the changelog for Pwned by Core Theory.
 
+## 1.5.0 (2021-01-27)
+
+## Enhancements
+
+- Replace unsafe runtime environment call with compile time call in `api_client.ex`.
+- Refactor `api_client.ex` for clarity, performance, and maintainability.
+
 ## 1.2.4 (2021-01-26)
 
 ### Enhancements

@@ -47,7 +47,7 @@ This package can be installed by adding `:pwned_coretheory` to your list of depe
 defp deps do
   [
     ...
-    {:pwned_coretheory, "~> 1.2"},
+    {:pwned_coretheory, "~> 1.5"},
   ]
 end
 ```

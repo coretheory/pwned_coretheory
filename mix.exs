@@ -1,7 +1,7 @@
 defmodule Pwned.MixProject do
   use Mix.Project
 
-  @version "1.2.4"
+  @version "1.5.0"
 
   def project do
     [
