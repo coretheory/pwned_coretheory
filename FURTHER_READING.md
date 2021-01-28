@@ -12,6 +12,7 @@ For this reason, it is best to set a `:debounce` option on your request with at 
 #In your application's file.html.leex
 <%= f = form_for @changeset, "#", [phx_change: :validate, phx_submit: :save] %>
   <%= email_input f, :email, phx_debounce: "1700", required: true %>
+  <%= submit "Register", phx_disable_with: "Registering..." %>
 </form>
 ```
 
