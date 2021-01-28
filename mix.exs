@@ -1,7 +1,7 @@
 defmodule Pwned.MixProject do
   use Mix.Project
 
-  @version "1.5.0"
+  @version "1.5.1"
 
   def project do
     [
@@ -61,6 +61,7 @@ defmodule Pwned.MixProject do
         "README.md",
         "CHANGELOG.md",
         "CONTRIBUTING.md",
+        "FURTHER_READING.md",
         "LICENSE.md"
       ]
     ]

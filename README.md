@@ -29,6 +29,7 @@ Additionally, we implement padding to further protect the privacy of the passwor
 -   [Usage](#usage)
 -   [Changelog](#changelog)
 -   [Contributing](#contributing)
+-   [Further Reading](#further-reading)
 -   [License](#license)
 -   [Notice](#notice)
 -   [Special Thanks](#special-thanks)
@@ -175,6 +176,10 @@ See the [changelog file](CHANGELOG.md).
 ## Contributing
 
 See the [contributing file](CONTRIBUTING.md).
+
+## Further Reading
+
+See the [further reading file](FURTHER_READING.md).
 
 ## License
 
