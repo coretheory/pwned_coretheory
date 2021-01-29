@@ -2,6 +2,12 @@
 
 This is the changelog for Pwned by Core Theory.
 
+## 1.5.2 (Pending)
+
+### Enhancements
+
+- Improve function docs clarity for `EmailFlattener.flatten/1` and `EmailReducer.reduce_email_list/1`.
+
 ## 1.5.1 (2021-01-27)
 
 ### Enhancements
