@@ -4,15 +4,15 @@ defmodule Pwned.Utils.EmailFlattener do
   [breachedaccount](https://haveibeenpwned.com/API/v3#BreachesForAccount) API v3 response.
   """
 
+  @doc """
+  Recursively flattens a nested list in reverse, then reverses
+  the list back to its call-time order.
+  """
   def flatten(list) do
     list
     |> Enum.reduce([], &do_flatten/2)
     |> Enum.reverse
   end
-
-  # Private Helper
-  # Recursively flatten all items in reverse
-  # (Reverse the entire list at the end in the calling method)
 
   defp do_flatten(nested, acc) when is_list(nested) do
     Enum.reduce(nested, acc, &do_flatten/2)
