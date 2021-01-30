@@ -2,8 +2,8 @@
 
 # Pwned by Core Theory
 
-![Master](https://github.com/coretheory/pwned_coretheory/workflows/Tests/badge.svg?branch=master)
-![Staging](https://github.com/coretheory/pwned_coretheory/workflows/Tests/badge.svg?branch=staging)
+![Master](https://github.com/coretheory/pwned_coretheory/workflows/Master/badge.svg?branch=master)
+![Staging](https://github.com/coretheory/pwned_coretheory/workflows/Staging/badge.svg)
 [![Hex.pm](https://img.shields.io/hexpm/v/pwned_coretheory.svg)](https://hex.pm/packages/pwned_coretheory)
 [![Docs](https://img.shields.io/badge/hex-docs-green.svg)](https://hexdocs.pm/pwned_coretheory/readme.html)
 [![Downloads](https://img.shields.io/hexpm/dt/pwned_coretheory.svg)](https://hex.pm/packages/pwned_coretheory)
