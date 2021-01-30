@@ -8,7 +8,7 @@
 
 | Master                                                                                                     | Staging       |
 | -------------                                                                                              |:-------------:|
-| ![All Tests](https://github.com/coretheory/pwned_coretheory/workflows/All%20Tests/badge.svg)      | ![All Tests](https://github.com/coretheory/pwned_coretheory/workflows/All%20Tests/badge.svg?branch=staging)
+| ![Tests](https://github.com/coretheory/pwned_coretheory/workflows/Tests/badge.svg?branch=master)      | ![Tests](https://github.com/coretheory/pwned_coretheory/workflows/Tests/badge.svg?branch=staging)
 
 
 A simple application to check if an email or password has been pwned using the HaveIbeenPwned? API v3.

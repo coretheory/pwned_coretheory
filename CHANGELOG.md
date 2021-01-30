@@ -2,7 +2,7 @@
 
 This is the changelog for Pwned by Core Theory.
 
-## 1.5.2 (Pending)
+## 1.5.2 (2021-01-30)
 
 ### Enhancements
 
