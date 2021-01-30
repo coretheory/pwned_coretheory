@@ -6,6 +6,8 @@ This is the changelog for Pwned by Core Theory.
 
 ### Enhancements
 
+- Add clearer test coverage for both `master` and `staging` branches to `README.md`.
+- Refactor GitHub Actions workflow.
 - Improve function docs clarity for `EmailFlattener.flatten/1` and `EmailReducer.reduce_email_list/1`.
 - Add a security policy.
 
