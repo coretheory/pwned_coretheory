@@ -2,9 +2,12 @@
 
 # Pwned by Core Theory
 
-| Master                                                                                                     | Staging       | Package        | Docs    |
-| -------------                                                                                              |:-------------:| :------------: | :-----: |
-| ![All Tests](https://github.com/coretheory/pwned_coretheory/workflows/All%20Tests/badge.svg)      | ![All Tests](https://github.com/coretheory/pwned_coretheory/workflows/All%20Tests/badge.svg?branch=staging) | [![Hex.pm](https://img.shields.io/hexpm/v/pwned_coretheory.svg)](https://hex.pm/packages/pwned_coretheory) | [![Docs](https://img.shields.io/badge/hex-docs-green.svg)](https://hexdocs.pm/pwned_coretheory/readme.html)
+[![Hex.pm](https://img.shields.io/hexpm/v/pwned_coretheory.svg)](https://hex.pm/packages/pwned_coretheory)
+[![Docs](https://img.shields.io/badge/hex-docs-green.svg)](https://hexdocs.pm/pwned_coretheory/readme.html)
+
+| Master                                                                                                     | Staging       |
+| -------------                                                                                              |:-------------:|
+| ![All Tests](https://github.com/coretheory/pwned_coretheory/workflows/All%20Tests/badge.svg)      | ![All Tests](https://github.com/coretheory/pwned_coretheory/workflows/All%20Tests/badge.svg?branch=staging)
 
 
 A simple application to check if an email or password has been pwned using the HaveIbeenPwned? API v3.
