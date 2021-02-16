@@ -41,6 +41,8 @@ Additionally, we implement padding to further protect the privacy of the passwor
 
 This package requires [httpoison v1.8](https://hex.pm/packages/httpoison). If you have v1.7 in your `mix.lock` file, then you will need to update it to `1.8` to successfully run `mix deps.get`.
 
+It also requires Elixir 1.11 to work. If you need functionality for earlier versions of Elixir, then we'd be happy to receive a PR.
+
 ## Install
 
 **Recommended**
