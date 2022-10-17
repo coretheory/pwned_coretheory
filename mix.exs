@@ -13,7 +13,7 @@ defmodule Pwned.MixProject do
       description: description(),
       package: package(),
       docs: docs(),
-      source_url: "https://github.com/coretheory/ct_pwned"
+      source_url: "https://github.com/coretheory/pwned_coretheory"
     ]
   end
 
@@ -46,7 +46,7 @@ defmodule Pwned.MixProject do
     [
       maintainers: ["Core Theory"],
       licenses: ["Apache 2.0"],
-      links: %{"GitHub" => "https://github.com/coretheory/ct_pwned"},
+      links: %{"GitHub" => "https://github.com/coretheory/pwned_coretheory"},
     ]
   end
 
@@ -56,7 +56,7 @@ defmodule Pwned.MixProject do
       name: "Pwned by Core Theory",
       source_ref: "v#{@version}",
       canonical: "https://hexdocs.pm/pwned_coretheory/",
-      source_url: "https://github.com/coretheory/ct_pwned",
+      source_url: "https://github.com/coretheory/pwned_coretheory",
       logo: "assets/static/images/CT_Logo_Color.png",
       extras: [
         "README.md",

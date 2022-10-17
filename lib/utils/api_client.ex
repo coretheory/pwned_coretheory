@@ -6,7 +6,9 @@ defmodule Pwned.Utils.APIClient do
   Requires a purchased [hibp-api_key](https://haveibeenpwned.com/API/Key).
   """
 
-  @hibp_api_key System.get_env("HIBP_API_KEY")
+  # Set the `hibp_api_key` config in your `runtime.exs` or similar for production.
+  # In development, you can simply set the env variable directly.
+  @hibp_api_key Application.compile_env(:pwned_coretheory, :hibp_api_key, System.get_env("HIBP_API_KEY"))
   @user_agent Application.compile_env(:pwned_coretheory, :user_agent, "Pwned by Core Theory Elixir Client")
 
   def get(head) do
