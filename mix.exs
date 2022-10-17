@@ -1,7 +1,7 @@
 defmodule Pwned.MixProject do
   use Mix.Project
 
-  @version "1.5.2"
+  @version "1.5.3"
 
   def project do
     [
@@ -13,7 +13,7 @@ defmodule Pwned.MixProject do
       description: description(),
       package: package(),
       docs: docs(),
-      source_url: "https://github.com/coretheory/ct_pwned"
+      source_url: "https://github.com/coretheory/pwned_coretheory"
     ]
   end
 
@@ -29,7 +29,8 @@ defmodule Pwned.MixProject do
       {:httpoison, "~> 1.8"},
       {:ex_doc, "~> 0.23.0", only: :dev, runtime: false},
       {:dialyxir, "~> 1.0", only: [:dev, :test], runtime: false},
-      {:credo, "~> 1.5", only: [:dev, :test], runtime: false}
+      {:credo, "~> 1.6", only: [:dev, :test], runtime: false},
+      {:sobelow, "~> 0.11", only: :dev},
     ]
   end
 
@@ -45,7 +46,7 @@ defmodule Pwned.MixProject do
     [
       maintainers: ["Core Theory"],
       licenses: ["Apache 2.0"],
-      links: %{"GitHub" => "https://github.com/coretheory/ct_pwned"},
+      links: %{"GitHub" => "https://github.com/coretheory/pwned_coretheory"},
     ]
   end
 
@@ -55,7 +56,7 @@ defmodule Pwned.MixProject do
       name: "Pwned by Core Theory",
       source_ref: "v#{@version}",
       canonical: "https://hexdocs.pm/pwned_coretheory/",
-      source_url: "https://github.com/coretheory/ct_pwned",
+      source_url: "https://github.com/coretheory/pwned_coretheory",
       logo: "assets/static/images/CT_Logo_Color.png",
       extras: [
         "README.md",
