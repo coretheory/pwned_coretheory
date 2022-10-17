@@ -9,8 +9,8 @@ defmodule Pwned.EmailTest do
   use ExUnit.Case, async: true
   alias Pwned
 
-  @test_pwned_email "test123@example.com"
-  @test_safe_email "Z76okiy2X1m5PFud8iPUQGqusShCJhg@example.com"
+  @test_pwned_email "multiple-breaches@hibp-integration-tests.com"
+  @test_safe_email "not-active-breach@hibp-integration-tests.com"
 
   describe "verify check_email/1" do
     test "check_email returns the email pwned count when email is pwned" do

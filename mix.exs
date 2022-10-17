@@ -29,7 +29,8 @@ defmodule Pwned.MixProject do
       {:httpoison, "~> 1.8"},
       {:ex_doc, "~> 0.23.0", only: :dev, runtime: false},
       {:dialyxir, "~> 1.0", only: [:dev, :test], runtime: false},
-      {:credo, "~> 1.5", only: [:dev, :test], runtime: false}
+      {:credo, "~> 1.5", only: [:dev, :test], runtime: false},
+      {:sobelow, "~> 0.11", only: :dev},
     ]
   end
 
