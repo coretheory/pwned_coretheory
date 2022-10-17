@@ -8,6 +8,7 @@ This is the changelog for Pwned by Core Theory.
 
 - Add proper Have I Been Pwned? test emails per their API documentation.
 - Switch `@hibp_api_key` to come from the application config and default to the environment variable. This is to support setting the application configuration at runtime for production environments.
+- Update dependencies.
 
 ## 1.5.2 (2021-01-30)
 
